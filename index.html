@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="text-wrapper">
+            <h1>Коэффициент <span class="underlined">Пирсона?</span> Легко.</h1>
+            <p>Коэффициент Пирсона применяется для обнаружения линейной зависимости между двумя переменными на одной и той же выборке</p>
+        </div>
+        
+        <div class="buttons-container" id="btn-container">
+            <button class="correlation-choice pierson" id="btn-p">Открыть калькулятор</button>
+        </div>
+    </header>
+
+    <div class="form-container non-active" id="form-p-container">
+        <h3>Введите через запятую:</h3>
+        <form id="form-p" class="form-p">
+
+                <label for="sequence-x">Последовательность значений X: </label>
+                <br>
+                    <input type="text" id="sequence-x" name="sequence-x" required>
+                <br>
+
+                <label for="sequence-x">Последовательность значений Y:</label>
+                <br>
+                    <input type="text" id="sequence-y" name="sequence-y" required>
+                <br>
+
+                <button type="submit" class="submit">Посчитать</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
